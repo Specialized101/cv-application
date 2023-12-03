@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.preview-window {
+  border: 1px solid black;
+  width: 595px;
+  height: 842px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  margin-block: 20px;
+}
+
+.intro {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.fullname {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.current-position {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact img {
+  width: 30px;
+}
+
+.title {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+}
+
+.period {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.school,
+.company {
+  width: 100px;
+  font-weight: 900;
+}
+
+.experience{ 
+  display: flex;
+  flex-direction: column;
+}
+
+.responsibilities {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 10px 10px 0px 0px;
+  align-self: flex-end;
+}
+
+.responsibilities > div {
+  width: 25ch;
+}

@@ -22,7 +22,7 @@ export default function Experience({ data, saveData, status }) {
           <input type="text" id="company" name="company" defaultValue={data.company} />
         </div>
         <div className="field">
-          <label htmlFor="position">Position title :</label>
+          <label htmlFor="position">Position :</label>
           <input type="text" id="position" name="position" defaultValue={data.position} />
         </div>
         <div className="field">

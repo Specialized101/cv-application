@@ -1,5 +1,4 @@
 import '../styles/Info.css'
-import Card from './Card.jsx'
 
 export default function Info({ data, saveData, status }) {
 
@@ -9,7 +8,8 @@ export default function Info({ data, saveData, status }) {
     const firstName = e.target.firstName.value
     const email = e.target.email.value
     const phone = e.target.phone.value
-    saveData('info', { firstName, lastName, email, phone })
+    const position = e.target.position.value
+    saveData('info', { firstName, lastName, email, phone, position })
     status('info', true)
   }
 
@@ -31,6 +31,10 @@ export default function Info({ data, saveData, status }) {
         <div className="field">
           <label htmlFor='phone'>Phone :</label>
           <input type='text' id='phone' name='phone' defaultValue={data.phone} />
+        </div>
+        <div className="field">
+          <label htmlFor='position'>Current position :</label>
+          <input type='text' id='position' name='position' defaultValue={data.position} />
         </div>
         <button type="submit">Save</button>
       </form>

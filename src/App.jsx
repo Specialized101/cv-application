@@ -7,7 +7,6 @@ export default function App() {
   const [userData, setUserData] = useState({ info: {}, education: {}, experience: {} })
 
   function handleUserData(key, data) {
-    console.log('Saving data ', data)
     setUserData({...userData, [key]: data })
   }
 
